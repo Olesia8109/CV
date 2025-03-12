@@ -1,0 +1,64 @@
+
+body {
+ font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
+  background-color: #ADD8E6; /* Светло-голубой фон */
+} 
+
+.container {
+  padding: 0 40px;
+  margin-left: 80px;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+  color: #000; /* Цвет текста ссылки по умолчанию */
+
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#1E90FF;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Расстояние между текстом и подчеркиванием */
+    height: 2px; /* Толщина подчеркивания */
+    background-color: #D3D3D3; /* Цвет подчеркивания (светло-серый) */
+    transform: scaleX(0); /* Начальное состояние: скрыто */
+    transition: transform 0.3s ease; /* Плавный переход */
+}
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления*/
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 1 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #FFD700;
+}
